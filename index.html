@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link href="style.css" rel="stylesheet">
+		<script src="main.js"></script>
+		<title>Web Tuner</title>
+		<link rel="icon" href="favicon.ico">
+	</head>
+	<body id="body">
+		<div class="header">
+			<div class="row">
+				<div class="button black" id="Digit2" data-key="CS">2: C# / D♭</div>
+				<div class="button black" id="Digit3" data-key="DS">3: D# / E♭</div>
+				<div class="button gray"></div>
+				<div class="button black" id="Digit5" data-key="FS">5: F# / G♭</div>
+				<div class="button black" id="Digit6" data-key="GS">6: G# / A♭</div>
+				<div class="button black" id="Digit7" data-key="AS">7: A# / B♭</div>
+			</div>
+			<div class="row">
+				<div class="button white" id="KeyQ" data-key="C">Q: C</div>
+				<div class="button white" id="KeyW" data-key="D">W: D</div>
+				<div class="button white" id="KeyE" data-key="E">E: E</div>
+				<div class="button white" id="KeyR" data-key="F">R: F</div>
+				<div class="button white" id="KeyT" data-key="G">T: G</div>
+				<div class="button white" id="KeyY" data-key="A">Y: A</div>
+				<div class="button white" id="KeyU" data-key="B">U: B</div>
+			</div>
+		</div>
+		<div class="box" id="box"></div>
+		<div class="footer">
+			<div class="row">
+				<select id="octave">
+					<option value="0">Octave 0</option>
+					<option value="1">Octave 1</option>
+					<option value="2">Octave 2</option>
+					<option value="3">Octave 3</option>
+					<option value="4">Octave 4</option>
+					<option selected="selected" value="5">Octave 5</option>
+					<option value="6">Octave 6</option>
+					<option value="7">Octave 7</option>
+					<option value="8">Octave 8</option>
+				</select>
+			</div>
+		</div>
+	</body>
+	<!-- Octave 0 -->
+	<audio src="Notes/A0.ogg" id="A0" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS0.ogg" id="AS0" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B0.ogg" id="B0" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 1 -->
+	<audio src="Notes/CS1.ogg" id="CS1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS1.ogg" id="DS1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS1.ogg" id="FS1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS1.ogg" id="GS1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS1.ogg" id="AS1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C1.ogg" id="C1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D1.ogg" id="D1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E1.ogg" id="E1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F1.ogg" id="F1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G1.ogg" id="G1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A1.ogg" id="A1" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B1.ogg" id="B1" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 2 -->
+	<audio src="Notes/CS2.ogg" id="CS2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS2.ogg" id="DS2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS2.ogg" id="FS2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS2.ogg" id="GS2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS2.ogg" id="AS2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C2.ogg" id="C2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D2.ogg" id="D2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E2.ogg" id="E2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F2.ogg" id="F2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G2.ogg" id="G2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A2.ogg" id="A2" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B2.ogg" id="B2" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 3 -->
+	<audio src="Notes/CS3.ogg" id="CS3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS3.ogg" id="DS3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS3.ogg" id="FS3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS3.ogg" id="GS3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS3.ogg" id="AS3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C3.ogg" id="C3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D3.ogg" id="D3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E3.ogg" id="E3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F3.ogg" id="F3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G3.ogg" id="G3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A3.ogg" id="A3" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B3.ogg" id="B3" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 4 -->
+	<audio src="Notes/CS4.ogg" id="CS4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS4.ogg" id="DS4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS4.ogg" id="FS4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS4.ogg" id="GS4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS4.ogg" id="AS4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C4.ogg" id="C4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D4.ogg" id="D4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E4.ogg" id="E4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F4.ogg" id="F4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G4.ogg" id="G4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A4.ogg" id="A4" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B4.ogg" id="B4" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 5 -->
+	<audio src="Notes/CS5.ogg" id="CS5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS5.ogg" id="DS5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS5.ogg" id="FS5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS5.ogg" id="GS5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS5.ogg" id="AS5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C5.ogg" id="C5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D5.ogg" id="D5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E5.ogg" id="E5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F5.ogg" id="F5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G5.ogg" id="G5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A5.ogg" id="A5" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B5.ogg" id="B5" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 6 -->
+	<audio src="Notes/CS6.ogg" id="CS6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS6.ogg" id="DS6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS6.ogg" id="FS6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS6.ogg" id="GS6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS6.ogg" id="AS6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C6.ogg" id="C6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D6.ogg" id="D6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E6.ogg" id="E6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F6.ogg" id="F6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G6.ogg" id="G6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A6.ogg" id="A6" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B6.ogg" id="B6" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 7 -->
+	<audio src="Notes/CS7.ogg" id="CS7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/DS7.ogg" id="DS7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/FS7.ogg" id="FS7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/GS7.ogg" id="GS7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/AS7.ogg" id="AS7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/C7.ogg" id="C7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/D7.ogg" id="D7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/E7.ogg" id="E7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/F7.ogg" id="F7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/G7.ogg" id="G7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/A7.ogg" id="A7" type="audio/ogg" preload="auto"></audio>
+	<audio src="Notes/B7.ogg" id="B7" type="audio/ogg" preload="auto"></audio>
+	<!-- Octave 8 -->
+	<audio src="Notes/C8.ogg" id="C8" type="audio/ogg" preload="auto"></audio>
+</html>
