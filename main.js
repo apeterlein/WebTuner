@@ -43,7 +43,6 @@ window.addEventListener("DOMContentLoaded", () => {
 		Array.prototype.forEach.call(document.getElementsByClassName("button"), (elm) => {
 			let audio = document.getElementById(elm.dataset.key + document.getElementById("octave").value);
 			if (audio) {
-				audio.load();
 				elm.classList.remove("gray");
 			}
 			else {
